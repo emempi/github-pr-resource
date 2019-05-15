@@ -29,7 +29,7 @@ func TestPut(t *testing.T) {
 			version: resource.Version{
 				PR:            "pr1",
 				Commit:        "commit1",
-				CommittedDate: time.Time{},
+				ChangedDate:   time.Time{},
 			},
 			parameters:  resource.PutParameters{},
 			pullRequest: createTestPR(1, "master", false, false),
@@ -44,7 +44,7 @@ func TestPut(t *testing.T) {
 			version: resource.Version{
 				PR:            "pr1",
 				Commit:        "commit1",
-				CommittedDate: time.Time{},
+				ChangedDate: time.Time{},
 			},
 			parameters: resource.PutParameters{
 				Status: "success",
@@ -61,7 +61,7 @@ func TestPut(t *testing.T) {
 			version: resource.Version{
 				PR:            "pr1",
 				Commit:        "commit1",
-				CommittedDate: time.Time{},
+				ChangedDate: time.Time{},
 			},
 			parameters: resource.PutParameters{
 				Status:  "failure",
@@ -79,7 +79,7 @@ func TestPut(t *testing.T) {
 			version: resource.Version{
 				PR:            "pr1",
 				Commit:        "commit1",
-				CommittedDate: time.Time{},
+				ChangedDate: time.Time{},
 			},
 			parameters: resource.PutParameters{
 				Comment: "comment",
